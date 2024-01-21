@@ -7,7 +7,43 @@
   <title>Template</title>
 </head>
 <body>
-<h1>Hello, from Netology!</h1>
-<img src="img/netology.svg" alt="Netology Logo">
+<div class="wrapper">
+  <div class="validator">
+    <div class="container">
+      <ul class="validator__cards-list">
+        <li class="validator__card">
+          <img class="card__image visa" src="./img/icons/visa-straight.png" alt="Visa">
+        </li>
+        <li class="validator__card">
+          <img class="card__image master_card" src="./img/icons/mastercard-straight.png" alt="Mastercard">
+        </li>
+        <li class="validator__card">
+          <img class="card__image american_express" src="./img/icons/american-express-straight.png" alt="AmericanExpress">
+        </li>
+        <li class="validator__card">
+          <img class="card__image discover" src="./img/icons/discover-curved-64px.png" alt="Discover">
+        </li>
+        <li class="validator__card">
+          <img class="card__image diners_club" src="./img/icons/diners-club.png" alt="Diners Club">
+        </li>
+        <li class="validator__card">
+          <img class="card__image maestro" src="./img/icons/maestro-curved-128px.png" alt="Maestro">
+        </li>
+        <li class="validator__card">
+          <img class="card__image mir" src="./img/icons/icons8-mir-48.png" alt="Мир">
+        </li>
+      </ul>
+      <div class="validator__form" >
+        <div class="input-wrapper" data-title="Please insert a credit card number">
+          <input class="input__text" type="text" placeholder="Credit card number">
+        </div>
+        <a class="form__btn">Click to Validate</a>
+      </div>
+      <div class="validator__message">
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>

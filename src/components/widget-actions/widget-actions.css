@@ -1,0 +1,44 @@
+.form__btn:hover {
+  background-color: #6681af;
+}
+
+.validator__message {
+  background: #ffffff;
+  border: 1px solid #80a7d7;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px 25px;
+  position: relative;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.on {
+  visibility: visible;
+}
+
+.valid::before  {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("./img/icons8-галочка-48.png") 50%/cover no-repeat;
+  top: 10px;
+  left: 2px;
+}
+
+.invalid::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("./img/icons8-крестик-48.png") 50%/cover no-repeat;
+  top: 10px;
+  left: 2px;
+}
+
+@media (max-width: 600px) {
+  .validator__message {
+    width: 65%;
+  }
+}
